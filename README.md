@@ -35,3 +35,8 @@ The targets are a Boolean variable (so 0, or 1). We are taking a period of 2 yea
 A Machine Learning algorithm, which will able to predict if a customer will buy again.
 
 This is a **classification problem** with two classes: won't buy and will buy, represented by 0s and 1s.
+
+## Data Preprocessing
+
+[Juypter Notebook](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/Customer_Conversion_Prediction_-_Machine%20Learning_-%20_Audiobook%20App.ipynb)
+
