@@ -38,5 +38,8 @@ This is a **classification problem** with two classes: won't buy and will buy, r
 
 ## Data Preprocessing
 
-[Juypter Notebook](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/Customer_Conversion_Prediction_-_Machine%20Learning_-%20_Audiobook%20App.ipynb)
+[Juypter Notebook](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/Customer_Conversion_Prediction_-_Preprocessing_-_Audiobook%20App.ipynb)
 
+## Machine Learning Model
+
+[Juypter Notebook](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/Customer_Conversion_Prediction_-_Machine%20Learning_-%20_Audiobook%20App.ipynb)
