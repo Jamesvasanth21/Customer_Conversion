@@ -28,7 +28,10 @@ Since we dont need the column names we remove them from the csv and save the csv
 So the above mentioned columns are the inputs (excluding customer ID, as it is completely arbitrary. It's more like a name, than a number).
 
 ### Target
-The targets are a Boolean variable (so 0, or 1). We are taking a period of 2 years in our inputs, and the next 6 months as targets. So, in fact, we are predicting if: based on the last 2 years of activity and engagement, a customer will convert in the next 6 months. 6 months sounds like a reasonable time. If they don't convert after 6 months, chances are they've gone to a competitor or didn't like the Audiobook way of digesting information.
+The targets are a Boolean variable (so 0, or 1). 
+
+### Data Design
+We are taking a period of 2 years in our inputs, and the next 6 months as targets. So, in fact, we are predicting if: based on the last 2 years of activity and engagement, a customer will convert in the next 6 months. 6 months sounds like a reasonable time. If they don't convert after 6 months, chances are they've gone to a competitor or didn't like the Audiobook way of digesting information.
 
 ![Data_as_Image](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/images/Data_as_Image.JPG)
 
