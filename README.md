@@ -19,7 +19,7 @@ If they don't convert after 6 months, chances are they've gone to a competitor o
 
 ![Data_as_Image](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/images/Data_as_Image.JPG)
 
-We have a **Audiobooks_data - Before Processing.csv** summarizing the data.
+We have a **[Audiobooks_data - Before Processing.csv](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/Audiobooks_data%20-%20Before%20Processing.csv)** summarizing the data.
 
 ### Inputs
 
