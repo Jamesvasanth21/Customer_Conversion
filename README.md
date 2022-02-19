@@ -8,9 +8,21 @@ The main idea is that if a customer has a low probability of coming back, there 
 
 
 ## Data Set
-We have a **Audiobooks_data - Before Processing.csv** summarizing the data. 
+
+### How the data was gathered and designed?
+
+The data was gathered from a Audiobook app, it represents two years worth of engagement. As we are doing **Supervised Learning**, we need targets. So targets was gathered, by taking extra six months after the two years period to check if the customer converted. So we took 2 years 6 months of data. The first two years are contained in the dataset are inputs, the next 6 months will show us if the person converted i.e bought another book. If yes, we count them as conversion and target will be '1', otherwise '0'.
+
+We are taking a period of 2 years in our inputs, and the next 6 months as targets. So, in fact, we are predicting if: based on the last 2 years of activity and engagement, a customer will convert in the next 6 months. 6 months sounds like a reasonable time. 
+
+If they don't convert after 6 months, chances are they've gone to a competitor or didn't like the Audiobook way of digesting information.
+
+![Data_as_Image](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/images/Data_as_Image.JPG)
+
+We have a **Audiobooks_data - Before Processing.csv** summarizing the data.
 
 ### Inputs
+
 The below mentioned are the variables in the data:
 - Customer ID,
 - Book length (mins)_overall, 
@@ -24,17 +36,13 @@ The below mentioned are the variables in the data:
 - Support Requests, 
 - Last visited minus Purchase date .
 
-Since we dont need the column names for model, so we remove them from the csv and save the csv as **Audiobooks_data.csv**.
+**Note**:  Since we don't need the column names for model or prediction, we remove them from the csv and save the csv as **Audiobooks_data.csv**. And this csv will be used as input going further.
 
 ### Target
+
 The targets are a Boolean variable (so 0, or 1), where 0 means the customer did not convert and 1 means the customer converted.
 
-### Data Exploration
-
-#### Data Design:
-We are taking a period of 2 years in our inputs, and the next 6 months as targets. So, in fact, we are predicting if: based on the last 2 years of activity and engagement, a customer will convert in the next 6 months. 6 months sounds like a reasonable time. If they don't convert after 6 months, chances are they've gone to a competitor or didn't like the Audiobook way of digesting information.
-
-#### Identifying Predictors:
+## Data Exploration
 
 - **ID** - ID of the customers who have activity or engagement with the Audiobook App atleast once.
 - **Book length (mins)_overall** - This column contains sum of the lengths of all purchases done by customer in Audiobook App.
@@ -51,18 +59,7 @@ A review of 2 indicates that person didnot have good experience with the audio b
 
 So the above mentioned columns are the inputs (excluding ID, as it is completely arbitrary. It's more like a name, than a number).
 
-- **Targets** - The data was gathered from a Audiobook app, it represents two years worth of engagement. As we are doing **Supervised Learning**, we need targets. Targets here are boolean where 1 means the customer converted and 0 means the customer did not convert. 
-We have the first 2 years data in the dataset and next 6 months as targets, and if the customer converts we have 1 in Target for them, otherwise its zero.
-
-  ![Data_as_Image](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/images/Data_as_Image.JPG)
-         
-
-#### Data Imputing
-
-The Review 10/10 column has some missing values as few people have not given their review. The people who have given thier reviews will be marked as 1 in review column. So, to avoid our ML Model from misbehaving we calculate the Average of the Reviews Available and fill this average in the missing rows. 
-
-
-
+- **Targets** - It is a categorical data with two categories '1' and '0', where if the customer converts in next 6 months we have 1 in Target for them and 0 if they do not convert.
 
 ## Task
 
