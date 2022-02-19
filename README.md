@@ -36,7 +36,7 @@ The below mentioned are the variables in the data:
 - Support Requests, 
 - Last visited minus Purchase date .
 
-**Note**:  Since we don't need the column names for model or prediction, we remove them from the csv and save the csv as **Audiobooks_data.csv**. And this csv will be used as input going further.
+**Note**:  Since we don't need the column names for model or prediction, we remove them from the csv and save the csv as **[Audiobooks_data.csv](https://github.com/Jamesvasanth21/Customer_Conversion/blob/main/Audiobooks_data.csv)**. And this csv will be used as input going further.
 
 ### Target
 
